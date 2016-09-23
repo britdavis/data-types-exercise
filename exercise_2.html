@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*
+		* Exercise Two
+		* Why does the following output true?
+		*/
+
+		var a = "false";
+		console.log(typeof(a));
+		var b = true;
+		console.log(typeof(b))
+
+		// "&&" is "and"
+		console.log (a && b);
+		console.log(b && a);
+
+		/* Answer: because a is true as it's not an empty string, AND b is true, so both true outputs first true = true
+		* Bonus Question: Why does (b && a) log "false"?
+			Answer: same as above, exept first truthy value is the string "false"
+		* Short Circuiting: 
+			AND
+
+			We return the first falsy value,
+			or if thre is no falsy value,
+			we return the last truthy value
+
+			OR
+
+			We return the first truthy value,
+			or if there is not truthy value,
+			 we return the last falsy value.
+		*/ 
+
+	</script>
+</body>
+</html>
+
+
+6 falsey values in JS:
+	1. false (false boolean)
+	2. 0	(false number)
+	3. ""	(false string)
+	4. undefined (undefined)
+	5. NaN	(number)
+	6. Null	(object)
+
+	var arr = [1,2,3,4;];
+;	while(arr.length) {
+		arr.pop();
+}

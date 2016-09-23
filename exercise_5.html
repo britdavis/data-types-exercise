@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var erty = "Erty:Seidohl:Jan11:CodeCraft";
+		
+		var dave = "Dave:Gray:Sep16:CodeCraft";
+		
+		var instructors = [
+			erty.split(":"),
+			dave.split(":")
+		];
+		
+		var erty_parts = instructors[0];
+		var dave_parts = instructors[1];
+		console.log(erty_parts[1] + " - " + erty_parts[2]);
+		console.log(dave_parts[1] + " - " + dave_parts[2]);
+
+		//TODO: console.log Erty and Dave's last name and birthday with a dash: "Name - Birthday"
+
+		var i = 0;
+		while (i < instructors.length) {
+			console.log(instructors[i][1] + " - " + instructors[i][2]);
+			i += 1;
+		}
+
+	</script>
+</body>
+</html>
